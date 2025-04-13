@@ -226,26 +226,31 @@
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
+
             <div class="contact-form">
-                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="1e10f2bd-c343-4147-bc85-d5dc1d415e30">
-                    <div class="form-group" action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="1e10f2bd-c343-4147-bc85-d5dc1d415e30">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="text" name="Surname" placeholder="Your Surname" required>
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">  
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="1e67f2bd-c963-8747-yt451-d5dc1d417e50">
+                    
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>    
                     </div>
-                    <div class="form-group"  action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="1e10f2bd-c343-4147-bc85-d5dc1d415e30">
+            
+                    <div class="form-group">
                         <input type="email" name="email" placeholder="Your Email" required>
-                        
                     </div>
-                    <div class="form-group"  action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="1e10f2bd-c343-4147-bc85-d5dc1d415e30">
+                    
+                    <div class="form-group"> 
                         <textarea name="message" placeholder="Your Message" required></textarea>
                     </div>
-                    <input type="hidden" name="access_key" value="1e10f2bd-c343-4147-bc85-d5dc1d415e30">
+                    
                     <button type="submit" class="btn">Send Message</button>
+                </form>
             </div>
+
         </div>
     </section>
 
