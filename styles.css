@@ -299,6 +299,7 @@ nav ul li a:hover::after {
 .book-section {
     padding: 100px 0;
     background-color: var(--white);
+    padding: 50px 0; /* Vertical padding */
 }
 
 .book-section .container {
@@ -306,6 +307,7 @@ nav ul li a:hover::after {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     align-items: center;
+    padding: 50px 0; /* Vertical padding */
 }
 
 .book-image img {
@@ -313,12 +315,13 @@ nav ul li a:hover::after {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: auto;
+    padding: 50px 0; /* Vertical padding */
 }
 .book-content {
     display: center;
-    justify-content: center;
+    justify-content: center;
     text-align: center;
-    padding: 40px 0; /* Vertical padding */
+    padding: 50px 0; /* Vertical padding */
   }
   
   .book-content h2.section-title {
@@ -396,6 +399,7 @@ nav ul li a:hover::after {
     display: center;
     flex-direction: column;
     gap: 15px;
+    padding: 50px 0; /* Vertical padding */
 }
 
 .feature {
