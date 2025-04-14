@@ -302,7 +302,7 @@ nav ul li a:hover::after {
 }
 
 .book-section .container {
-    display: grid;
+    display: center;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     align-items: center;
@@ -314,11 +314,46 @@ nav ul li a:hover::after {
     width: 100%;
     height: auto;
 }
-
-.book-content h3 {
+.book-content {
+    display: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0; /* Vertical padding */
+  }
+  
+  .book-content h2.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+  }
+  
+  .book-content h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: var(--primary-color);
+    max-width: 900px; /* Optimal line length for reading */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .book-rating {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: gold;
+    background-color: rgba(0,0,0,0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+
+.book-rating {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: gold;
+    background-color: rgba(0,0,0,0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
 }
 
 .book-rating {
@@ -334,7 +369,7 @@ nav ul li a:hover::after {
 }
 
 .book-details {
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 .book-details p {
@@ -358,7 +393,7 @@ nav ul li a:hover::after {
 }
 
 .book-features {
-    display: flex;
+    display: center;
     flex-direction: column;
     gap: 15px;
 }
@@ -785,4 +820,17 @@ footer {
     .testimonial p {
         font-size: 1rem;
     }
+}
+/* PayPal Button Styles */
+#paypal-button-container {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Optional: Style for when the button is loading */
+#paypal-button-container.loading {
+    min-height: 100px;
+    background: url('loading-spinner.gif') center center no-repeat;
 }

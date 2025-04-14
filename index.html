@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For My Identity | South African Growth Strategies</title>
+    <script 
+  src="https://www.paypal.com/sdk/js?client-id=BAA7MUv000nP0huXQBNwRC0r93Xznmzl-Ps-KM9V3fbBkFT_htvNuffuX2kZew80V_tEyS6mNCGfOcGIXI&components=hosted-buttons&disable-funding=venmo&currency=USD">
+</script>
     <link rel="stylesheet" href="images/ican.jpg">
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <header>
@@ -87,22 +91,26 @@
 
     <section class="book-section" id="book">
         <div class="container">
-            <div class="book-image">
-                <img src="images/iam_book-removebg-preview (1).pnggit ini" alt="Sustaining Economic Development book cover">
-            </div>
+
             <div class="book-content">
                 <h2 class="section-title">The Book</h2>
                 <h3>Sustaining Economic Development: South African Strategies</h3>
                 <div class="book-rating">
                     ★★★★★ (24 reviews)
                 </div>
+
                 <p class="book-description">This groundbreaking book provides actionable strategies for economic growth and stability in South African communities. Drawing from real-world experience in multiple sectors, the author presents a comprehensive approach to nurturing sustainable development.</p>
                 <div class="book-details">
-                    <p><strong>Price:</strong> R350.00</p>
-                    <p><strong>Format:</strong> Hardcopy & eBook</p>
-                    <p><strong>Pages:</strong>120</p>
+
+
+                    <div id="paypal-container-CP4NH7G822CL4"></div>
+                    <script>
+                    paypal.HostedButtons({
+                        hostedButtonId: "CP4NH7G822CL4",
+                    }).render("#paypal-container-CP4NH7G822CL4")
+                    </script>                  
                 </div>
-                <button class="btn buy-btn">Buy Now</button>
+
                 <div class="book-features">
                     <div class="feature">
                         <i class="fas fa-check-circle"></i>
@@ -118,7 +126,9 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
     </section>
 
     <section class="values" id="values">
@@ -230,7 +240,7 @@
             <div class="contact-form">
                 <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">  
                     <!-- Replace with your Access Key -->
-                    <input type="hidden" name="access_key" value="1e10f2bd-c343-4147-bc85-d5dc1d415e30">
+                    <input type="hidden" name="access_key" value="fcala08f-7947-44f0-afa3-7291199d958b">
                     
                     <!-- Honeypot Spam Protection -->
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
